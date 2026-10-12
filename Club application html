@@ -1,0 +1,185 @@
+    <input type="email" id="email" name="email" required>
+  </p>
+  <p>
+    <label for="aadhar">Aadhar Number:</label><br>
+    <input type="text" id="aadhar" name="aadhar" pattern="[0-9]{12}" maxlength="12" placeholder="12 digits">
+  </p>
+  <p>
+    <label for="address">Address:</label><br>
+    <textarea id="address" name="address" rows="3" cols="40" required></textarea>
+  </p>
+
+  <h3>2. Parent / Guardian Details (if under 18)</h3>
+  <p>
+    <label for="guardian-name">Parent / Guardian Name:</label><br>
+    <input type="text" id="guardian-name" name="guardian_name">
+  </p>
+  <p>
+    <label for="guardian-mobile">Mobile Number:</label><br>
+    <input type="tel" id="guardian-mobile" name="guardian_mobile">
+  </p>
+  <p>
+    <label for="guardian-email">Email ID:</label><br>
+    <input type="email" id="guardian-email" name="guardian_email">
+  </p>
+
+  <h3>3. Academic Details</h3>
+  <p>
+    <label for="institution">School / College Name:</label><br>
+    <input type="text" id="institution" name="institution">
+  </p>
+  <p>
+    <label for="grade">Class / Grade / Year:</label><br>
+    <input type="text" id="grade" name="grade">
+  </p>
+  <p>
+    <label for="roll">Roll Number / Student ID:</label><br>
+    <input type="text" id="roll" name="roll">
+  </p>
+  <p>
+    <label for="board">Board / University:</label><br>
+    <input type="text" id="board" name="board">
+  </p>
+  <p>
+    School/College Sports Team Member?<br>
+    <input type="radio" id="sq-yes" name="sports_quota" value="Yes"> <label for="sq-yes">Yes</label>
+    <input type="radio" id="sq-no" name="sports_quota" value="No"> <label for="sq-no">No</label>
+  </p>
+
+  <h3>4. Select Position</h3>
+  <p>
+    <label for="role">Playing Role:</label><br>
+    <select id="role" name="role">
+      <option value="">-- Select --</option>
+      <option>Batsman</option>
+      <option>Bowler</option>
+      <option>All-rounder</option>
+      <option>Wicket Keeper</option>
+    </select>
+  </p>
+  <p>
+    <label for="batting">Batting Style:</label><br>
+    <select id="batting" name="batting">
+      <option value="">-- Select --</option>
+      <option>Right-hand</option>
+      <option>Left-hand</option>
+    </select>
+  </p>
+  <p>
+    <label for="bowling">Bowling Style:</label><br>
+    <select id="bowling" name="bowling">
+      <option value="">-- Select --</option>
+      <option>Pace</option>
+      <option>Spin</option>
+      <option>N.A.</option>
+    </select>
+  </p>
+  <p>
+    <label for="jersey">Jersey Size:</label><br>
+    <select id="jersey" name="jersey">
+      <option value="">-- Select --</option>
+      <option>S</option>
+      <option>M</option>
+      <option>L</option>
+      <option>XL</option>
+    </select>
+  </p>
+  <p>
+    <label for="experience">Previous Club / Playing Experience:</label><br>
+    <textarea id="experience" name="experience" rows="3" cols="40"></textarea>
+  </p>
+  <p>
+    <label for="referral">How did you hear about Black Hawks CC?</label><br>
+    <input type="text" id="referral" name="referral">
+  </p>
+  <p>
+    <label for="comments">Additional Comments:</label><br>
+    <textarea id="comments" name="comments" rows="3" cols="40"></textarea>
+  </p>
+
+  <h3>5. Health &amp; Emergency Contact</h3>
+  <p>
+    <label for="blood-group">Blood Group:</label><br>
+    <input type="text" id="blood-group" name="blood_group" placeholder="e.g. O+">
+  </p>
+  <p>
+    Any Fitness Restrictions?<br>
+    <input type="radio" id="fit-yes" name="fitness" value="Yes"> <label for="fit-yes">Yes</label>
+    <input type="radio" id="fit-no" name="fitness" value="No"> <label for="fit-no">No</label>
+  </p>
+  <p>
+    <label for="medical">Medical Conditions / Allergies (if any):</label><br>
+    <textarea id="medical" name="medical" rows="3" cols="40"></textarea>
+  </p>
+  <p>
+    <label for="emergency-name">Emergency Contact Name:</label><br>
+    <input type="text" id="emergency-name" name="emergency_name" required>
+  </p>
+  <p>
+    <label for="emergency-number">Emergency Contact Number:</label><br>
+    <input type="tel" id="emergency-number" name="emergency_number" required>
+  </p>
+  <p>
+    <label for="emergency-relation">Relationship to Applicant:</label><br>
+    <input type="text" id="emergency-relation" name="emergency_relation">
+  </p>
+
+  <h3>6. Upload Certificates</h3>
+  <p>
+    <label for="cert-id">ID Proof (required):</label><br>
+    <input type="file" id="cert-id" name="cert_id" accept=".pdf,.jpg,.jpeg,.png" required>
+  </p>
+  <p>
+    <label for="cert-photo">Passport Size Photo:</label><br>
+    <input type="file" id="cert-photo" name="cert_photo" accept=".jpg,.jpeg,.png">
+  </p>
+  <p>
+    <label for="cert-medical">Medical Certificate:</label><br>
+    <input type="file" id="cert-medical" name="cert_medical" accept=".pdf,.jpg,.jpeg,.png">
+  </p>
+  <p>
+    <label for="cert-achievement">Achievement Certificates:</label><br>
+    <input type="file" id="cert-achievement" name="cert_achievement" accept=".pdf,.jpg,.jpeg,.png" multiple>
+  </p>
+  <p>
+    <label for="cert-age">Age Proof:</label><br>
+    <input type="file" id="cert-age" name="cert_age" accept=".pdf,.jpg,.jpeg,.png">
+  </p>
+
+  <h3>7. Declaration</h3>
+  <p>
+    <input type="checkbox" id="declare-truth" name="declare_truth" required>
+    <label for="declare-truth">I confirm that the information provided above is true and complete.</label>
+  </p>
+  <p>
+    <input type="checkbox" id="declare-rules" name="declare_rules" required>
+    <label for="declare-rules">I agree to abide by the rules and code of conduct of Black Hawks Cricket Club.</label>
+  </p>
+  <p>
+    <input type="checkbox" id="declare-guardian" name="declare_guardian">
+    <label for="declare-guardian">(If under 18) I, the parent/guardian, consent to this application.</label>
+  </p>
+  <p>
+    <label for="applicant-name">Applicant Name:</label><br>
+    <input type="text" id="applicant-name" name="declare_applicant_name">
+  </p>
+  <p>
+    <label for="sign-date">Date:</label><br>
+    <input type="date" id="sign-date" name="sign_date">
+  </p>
+  <p>
+    <label for="cert-signature">Signature (scanned image):</label><br>
+    <input type="file" id="cert-signature" name="cert_signature" accept=".jpg,.jpeg,.png,.pdf" required>
+  </p>
+
+  <p>
+    <button type="submit">Submit Application</button>
+    <button type="reset">Clear Form</button>
+  </p>
+
+</form>
+
+<p>Black Hawks Cricket Club - Thank you for joining our team!</p>
+
+</body>
+</html>
